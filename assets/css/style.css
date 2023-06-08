@@ -1,0 +1,77 @@
+/* Variables */
+
+:root {
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* General */
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    font-size: 16px;
+}
+.page-wrapper {
+    margin: 0 auto;
+}
+picture.hero {
+    width:100%;
+}
+
+/* Typography */
+
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 1.8rem;
+}
+
+/* Sign up form */
+
+.sign-up {
+    padding: 1rem;
+}
+.sign-up ul {
+    padding: 0;
+}
+.sign-up ul li {
+    list-style: none;
+
+}
+.sign-up ul li::before {
+    content: url('../images/icon-list.svg');
+    margin-right: 5px;
+}
+
+/* Form */
+
+.sign-up__form {
+    width:100%;
+}
+.sign-up__form label {
+    color: var(--grey);
+    display:block;
+    margin-bottom: 0.4rem;
+}
+
+.sign-up__form input, .sign-up__form button {
+    border-radius: 5px;
+    width:100%;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    border: 1px solid var(--grey);
+    margin-bottom: 0.4rem;
+}
+
+.sign-up__form button {
+    background-color: var(--darkSlateGrey);
+    color: var(--white);
+    border: none;
+}
